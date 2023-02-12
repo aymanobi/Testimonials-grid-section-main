@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+.contenaire {
+	width: 100%;
+	min-height: 500px;
+	background-color: hsl(0, 0%, 81%);
+}
+
+.content {
+	display: grid;
+	grid-auto-rows: minmax(60px, auto);
+	padding: 15px;
+	grid-template-areas:
+		"daniel daniel daniel daniel daniel jonathan kira "
+		"daniel daniel daniel daniel daniel jonathan kira "
+		"daniel daniel daniel daniel daniel jonathan kira "
+		"jeanette patrick patrick patrick patrick patrick kira "
+		"jeanette patrick patrick patrick patrick patrick kira "
+		"jeanette patrick patrick patrick patrick patrick kira "
+	;
+	grid-gap: 25px;
+}
+
+.box {
+	border-radius: 10px;
+	padding: 27px;
+	display: inline-block;
+	align-items: center;
+	color: hsl(0, 0%, 100%);
+}
+
+.box img {
+	border-radius: 50%;
+	width: 40px;
+
+}
+
+.box .first-p {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-size: 25px;
+	font-weight: 500;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.box .second-p {
+	font-size: 17px;
+	opacity: 70%;
+}
+
+.img {
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-start;
+	width: 200px;
+}
+
+.img h5 {
+	padding-left: 15px;
+}
+
+span {
+	opacity: 50%;
+	font-size: 13px;
+}
+
+.quote {
+	position: absolute;
+}
+
+.daniel {
+	grid-area: daniel;
+	background-color: hsl(263, 55%, 52%);
+}
+
+.jeanette {
+	grid-area: jeanette;
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(217, 19%, 35%);
+
+}
+
+.jonathan {
+	grid-area: jonathan;
+	background-color: hsl(217, 19%, 35%);
+
+}
+
+.kira {
+	grid-area: kira;
+	background-color: hsl(0, 0%, 100%);
+	color: hsl(217, 19%, 35%);
+}
+
+.patrick {
+	grid-area: patrick;
+	background-color: hsl(219, 29%, 14%);
+}
+
+@media screen and (max-width:750px) {
+	.content {
+		display: grid;
+		grid-auto-rows: minmax(60px, auto);
+		grid-auto-columns: minmax(25px, auto);
+		padding: 15px;
+		grid-template-areas:
+			"daniel daniel daniel daniel daniel daniel daniel"
+			"daniel daniel daniel daniel daniel daniel daniel"
+			"daniel daniel daniel daniel daniel daniel daniel"
+			"jonathan jonathan jonathan jonathan jonathan jonathan jonathan"
+			"jonathan jonathan jonathan jonathan jonathan jonathan jonathan"
+			"jonathan jonathan jonathan jonathan jonathan jonathan jonathan"
+			"jeanette jeanette jeanette jeanette jeanette jeanette jeanette"
+			"jeanette jeanette jeanette jeanette jeanette jeanette jeanette"
+			"jeanette jeanette jeanette jeanette jeanette jeanette jeanette"
+			"patrick patrick patrick patrick patrick patrick patrick"
+			"patrick patrick patrick patrick patrick patrick patrick"
+			"patrick patrick patrick patrick patrick patrick patrick"
+			"kira kira kira kira kira kira kira"
+			"kira kira kira kira kira kira kira"
+			"kira kira kira kira kira kira kira"
+		;
+		grid-gap: 25px;
+	}
+}
